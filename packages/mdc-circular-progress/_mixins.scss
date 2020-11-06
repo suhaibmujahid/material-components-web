@@ -79,6 +79,8 @@
 
   .mdc-circular-progress__indeterminate-container {
     @include feature-targeting.targets($feat-structure) {
+      // Zero font size in order to ignore whitespaces between HTML elements.
+      font-size: 0;
       opacity: 0;
     }
   }
